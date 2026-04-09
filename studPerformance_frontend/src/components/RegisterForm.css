@@ -1,0 +1,192 @@
+/* Container center align */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f5f6fa;
+    font-family: Arial, sans-serif;
+   
+    /* Fade-in animation */
+    animation: fadeIn 0.8s ease-in-out;
+}
+/* Form card */
+
+
+
+/* Form card */
+.register-form {
+    background-color: #fff;
+    padding: 40px 50px;  /* Increased padding */
+    border-radius: 12px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+    width: 400px; /* Increased width */
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on form card */
+.register-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Form heading */
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2f3640;
+    font-size: 26px;
+}
+
+/* Input fields */
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #2f3640;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #dcdde1;
+    outline: none;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus animation */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #487eb0;
+    box-shadow: 0 0 8px rgba(72, 126, 176, 0.3);
+}
+
+/* Submit button */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #487eb0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover animation */
+.btn-submit:hover {
+    background-color: #40739e;
+    transform: translateY(-2px);
+}
+
+/* Fade-in keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+/* css login form/*
+/* Container center align with faint gradient background */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f4f8, #e8eef5); /* light pastel colors */
+    font-family: 'Poppins', Arial, sans-serif;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Form card */
+.login-form {
+    background-color: #ffffff;
+    padding: 35px 45px;
+    border-radius: 15px;
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.1); /* softer shadow */
+    width: 400px;
+    max-width: 90%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Form heading */
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4b6cb7; /* softer heading color */
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* Input fields */
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555; /* softer label color */
+    font-size: 14px;
+}
+
+.form-group input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dcdde1;
+    outline: none;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #4b6cb7;
+    box-shadow: 0 0 10px rgba(75, 108, 183, 0.2);
+}
+
+/* Submit button */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #4b6cb7, #182848); /* soft gradient */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(90deg, #182848, #4b6cb7);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(72, 108, 176, 0.3);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+

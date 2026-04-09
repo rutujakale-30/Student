@@ -1,0 +1,119 @@
+/* Layout */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #1e1e2f, #34344a);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  border-radius: 0 12px 12px 0;
+}
+
+.sidebar h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.sidebar nav {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Sidebar Buttons */
+.sidebar-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-button:hover {
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  color: #fff;
+  transform: translateX(5px);
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Icons */
+.icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* वेगवेगळ्या icons ना रंग द्यायचा असल्यास */
+.sidebar-button:nth-child(1) .icon { color: #4da6ff; } /* Home */
+.sidebar-button:nth-child(2) .icon { color: #ffb84d; } /* Courses */
+.sidebar-button:nth-child(3) .icon { color: #4dff88; } /* Performance */
+.sidebar-button:nth-child(4) .icon { color: #d24dff; } /* Tests */
+
+/* Logout Button */
+.logout-button {
+  padding: 12px 15px;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+  background-color: #e63939;
+  transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f5f5f5;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Input Field */
+.input-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-box:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}

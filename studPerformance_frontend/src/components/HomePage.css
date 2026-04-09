@@ -1,0 +1,83 @@
+/* Homepage.css */
+
+.homepage {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://www.collegesuccessfoundation.org/wp-content/uploads/2022/01/scholarships_student_success_blog.png);
+  /*background: linear-gradient(135deg, #6a11cb, #bcc8dd); /* gradient background */
+  /* For solid color, use: background-color: #2575fc; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-overlay {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent overlay */
+  padding: 50px;
+  border-radius: 15px;
+  text-align: center;
+  color:black;
+}
+
+.homepage-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+  width:500px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.buttons button:first-child {
+  background-color: #6176ff; /* Login button color */
+  color: white;
+}
+
+.buttons button:first-child:hover {
+  background-color: #7150e8;
+}
+
+.buttons button:last-child {
+  background-color: #28a745; /* Register button color */
+  color: white;
+}
+
+.buttons button:last-child:hover {
+  background-color: #218838;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .homepage-overlay {
+    padding: 30px;
+  }
+
+  .homepage-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+    max-width: 200px;
+  }
+}

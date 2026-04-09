@@ -1,0 +1,58 @@
+.student-performance-container {
+  width: 75%;
+  margin: 30px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefefe;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 28px;
+  text-shadow: 1px 1px 2px #ddd;
+}
+
+.performance-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.performance-table th,
+.performance-table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.performance-table th {
+  background: linear-gradient(90deg, #4CAF50, #81C784);
+  color: white;
+  font-size: 16px;
+}
+
+.performance-table td {
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.performance-table tr:nth-child(even) td {
+  background-color: #f1f8e9;
+}
+
+.performance-table tr:hover td {
+  background-color: #c8e6c9;
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.performance-table td:first-child {
+  font-weight: 600;
+  color: #2e7d32;
+}

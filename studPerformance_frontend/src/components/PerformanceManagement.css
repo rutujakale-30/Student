@@ -1,0 +1,225 @@
+.performance-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 25px;
+  font-family: "Segoe UI", sans-serif;
+  color: #1b4332;
+}
+
+.performance-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #2d6a4f;
+  margin-bottom: 25px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #40916c;
+}
+
+/* 🔍 Search bar */
+.search-bar {
+  padding: 8px 12px;
+  margin: 12px 0;
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+.search-bar:focus {
+  border-color: #40916c;
+  box-shadow: 0 0 6px rgba(64, 145, 108, 0.4);
+}
+
+/* 📊 Tables */
+/* Student Table */
+.student-table {
+  width: 100%;
+  min-width: 1000px;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+  background: #fdfefe;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-table th {
+  background: #d1f0e6;
+  color: #2d2d2d;
+  font-weight: 600;
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.student-table td {
+  padding: 12px 18px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.student-table tr:nth-child(even) {
+  background: #f7fbfa;
+}
+
+.student-table tr:hover {
+  background: #e5f7f1;
+  transition: 0.3s;
+}
+
+.student-table button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #7dade0;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.student-table button:hover {
+  background: #670a6d;
+}
+/* Performance Table */
+.performance-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.performance-table th {
+  background: #bee3f8;
+  color: #1a202c;
+  font-weight: bold;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+.performance-table td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.performance-table tr:nth-child(even) {
+  background: #f8fcff;
+}
+
+.performance-table tr:hover {
+  background: #e6f4fc;
+  transition: 0.3s;
+}
+
+/* Action buttons */
+.performance-table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #3182ce;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  margin: 0 4px;
+  transition: 0.3s;
+}
+
+.performance-table button:hover {
+  background: #225ea8;
+}
+
+
+/* 🔘 Buttons */
+button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #52b788;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+button:hover {
+  background: #40916c;
+  transform: scale(1.05);
+}
+
+/* ⚡ Action Buttons */
+.action-buttons {
+  margin: 15px 0;
+  display: flex;
+  gap: 12px;
+}
+
+/* 📝 Performance Form */
+.performance-form {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.performance-form h3 {
+  margin-bottom: 15px;
+  color: #2d6a4f;
+}
+
+.performance-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.performance-form input:focus {
+  border-color: #52b788;
+  box-shadow: 0 0 5px rgba(82, 183, 136, 0.4);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+
+.pagination {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+

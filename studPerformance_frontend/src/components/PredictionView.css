@@ -1,0 +1,83 @@
+/* PredictionView.css */
+
+/* Container styling */
+.prediction-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.prediction-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Table styling */
+.prediction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.prediction-table th,
+.prediction-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.prediction-table th {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.prediction-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.prediction-table tr:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.01);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* Readiness Level colors */
+.readiness-excellent {
+  color: #2e7d32; /* green */
+  font-weight: bold;
+}
+
+.readiness-average {
+  color: #ff9800; /* orange */
+  font-weight: bold;
+}
+
+.readiness-low {
+  color: #d32f2f; /* red */
+  font-weight: bold;
+}
+
+/* Error message */
+.error-message {
+  text-align: center;
+  color: #d32f2f;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Loading message */
+.loading-message {
+  text-align: center;
+  color: #555;
+  font-style: italic;
+}

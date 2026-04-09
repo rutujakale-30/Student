@@ -1,0 +1,118 @@
+/* Full page gradient background */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Glassmorphism login card */
+.login-card {
+
+  background: rgb(241, 239, 237);
+  backdrop-filter: blur(10px);
+  padding: 50px 40px;
+  border-radius: 20px;
+  text-align: center;
+  color:black;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  transition: transform 0.3s;
+}
+
+.login-card:hover {
+  transform: scale(1.05);
+}
+
+.login-card h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Form styling */
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-card input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.login-card input::placeholder {
+  color:black;
+
+}
+
+.login-card input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px #6e6c6c;
+}
+
+/* Login button */
+.login-card button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff6f91, #ff9472);
+  color:black;
+  transition: all 0.3s ease;
+}
+
+.login-card button:hover {
+  background: linear-gradient(45deg, #ff9472, #ff6f91);
+  transform: scale(1.05);
+}
+
+/* Back button */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff9472, #ff6f91);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: linear-gradient(45deg, #ff6f91, #ff9472);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-card {
+    width: 90%;
+    padding: 40px 20px;
+  }
+}
+
+.login-card input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: black;   /* <-- changed from #fff to black */
+}
